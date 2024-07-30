@@ -24,7 +24,7 @@ export default function Login() {
   const handleLogin = () => {
     event.preventDefault()
     const { email, password } = state;
-    const users = JSON.parse(localStorage.getItem("users"));
+    const users = JSON.parse(localStorage.getItem("users")) || [];
     if(email===""||password==="") return toast.error("Enter All Credentials")
     const userFound = users.find((user) => {
       return user.email === email && user.password === password;
