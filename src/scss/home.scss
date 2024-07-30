@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.home-page{
+  min-height: calc(100vh - 56px);
+  // background-color: #2E236C;
+  background-color: #433D8B;
+}
+.home-page .container{
+  height: calc(100vh - 56px);
+
+}
+.card {
+  font-weight: 600;
+  width: 15rem;
+  height: 25rem;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  // background: transparent ;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+ 
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 65%;
+  top: 0px;
+  left: 0;
+  opacity: 0.9;
+}
+
+
+
+.card-content{
+  // color: #001537;
+  color: #433D8B;
+  padding-left:15px !important ;
+  // padding-bottom: 7px !important;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  // background: #b1dae7;
+  background: #bfaae4;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  // letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #bfaae4;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+
+ .card2 .card .cta:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  // background: #b1dae7;
+  background: #d0a479;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease;
+}
+
+.card2 .card .cta:hover:before {
+  width: 100%;
+  background: #d0a479;
+}
